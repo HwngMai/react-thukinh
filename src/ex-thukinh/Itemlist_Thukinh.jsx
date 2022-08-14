@@ -8,7 +8,7 @@ export default class Itemlist_ThuKinh extends Component {
         <div className='grid grid-flow-row-dense grid-cols-3 grid-rows-3'>
           {this.props.data.map((item) => {
             return (
-              <div className=''>
+              <div key={item.id} className=''>
                 <Item_Thukinh detail={item} />
               </div>
             );
