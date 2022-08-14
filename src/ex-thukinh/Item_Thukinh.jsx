@@ -3,11 +3,15 @@ import React, { Component } from "react";
 class Item_Thukinh extends Component {
   render() {
     let { id, price, name, url, desc } = this.props.detail;
+    let handleThuKinh = () => {
+      let contentHTML = `<img src=${url}>`;
+      document.getElementById("preview_item").innerHTML = contentHTML;
+    };
     return (
       <div
         className='flex flex-col justify-center text-center items-center'
         style={{ width: "18rem" }}>
-        <button id={id} className={id}>
+        <button onClick={handleThuKinh} id={id} className={id}>
           <img className='object-cover' src={url} alt='glasses img'></img>
         </button>
         <div className=''>

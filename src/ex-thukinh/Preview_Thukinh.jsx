@@ -7,8 +7,7 @@ class Preview_Thukinh extends Component {
         <img className='object-cover w-[400px]' src={model}></img>
         <div
           id='preview_item'
-          className='absolute bg-slate-100 w-[200px] h-[40px] top-[200px]'>
-        </div>
+          className='absolute w-[200px] h-[40px] top-[190px]'></div>
       </div>
     );
   }
