@@ -1,9 +1,20 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import Item_Thukinh from "./Item_Thukinh";
 
 export default class Itemlist_ThuKinh extends Component {
   render() {
     return (
-      <div>Itemlist_ThuKinh</div>
-    )
+      <div className='flex justify-center items-center'>
+        <div className='grid grid-flow-row-dense grid-cols-3 grid-rows-3'>
+          {this.props.data.map((item) => {
+            return (
+              <div className=''>
+                <Item_Thukinh detail={item} />
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
   }
 }
